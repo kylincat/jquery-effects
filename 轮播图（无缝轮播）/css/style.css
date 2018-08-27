@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.wrapper {
+    margin: 20px auto;
+    width: 1200px;
+    height: 535px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper ul {
+    width: 500%;
+    position: absolute;
+}
+.wrapper ul li {
+    
+    float: left;
+}
+.wrapper ol {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 20px;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 10px;
+}
+.wrapper ol li {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    float: left;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+.wrapper ol li.now{
+    background: #f00;
+}
+.arrow {
+    opacity: 0;
+}
+.wrapper:hover .arrow{
+    opacity: 1;
+}
+.arrow .left, .arrow .right {
+    position: absolute;  
+    width: 30px;
+    height: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, .4);
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-family: "宋体";
+    color: #fff;
+}
+.arrow .left {
+    left: 0;
+}
+.arrow .right {
+    right: 0;
+}

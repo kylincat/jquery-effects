@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <ul id="ul">
+            <li><a href="javascript:"><img src="../img/1200x535-one.jpg" alt=""></a></li>
+            <li><a href="javascript:"><img src="../img/1200-535-two.jpg" alt=""></a></li>
+            <li><a href="javascript:"><img src="../img/1200-535-three.jpg" alt=""></a></li>
+            <li><a href="javascript:"><img src="../img/1200-535-four.jpg" alt=""></a></li>
+            <!-- 在最后一张图片后加上第一张的图片，可以实现无缝轮播，原因是最后一张图片换成第一张图片后人的眼睛察觉不到， -->
+            <li><a href="javascript:"><img src="../img/1200x535-one.jpg" alt=""></a></li>
+        </ul>
+
+        <div class="arrow">
+            <a class="left" href="javascript:void(0);">&lt;</a>
+            <a class="right" href="javascript:void(0);">&gt;</a>
+        </div>
+
+        <ol id="ol">
+            <li class="now"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://cdn.bootcss.com/jquery/2.1.2/jquery.min.js"></script> -->
+<script src="js/index.js"></script>
+</body>
+</html>

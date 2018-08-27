@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+</head>
+<body>
+    <input type="text" id="username">
+    <button id="btn1">原生js</button>
+    <button id="btn2">jquery</button>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    //使用原生js
+    window.onload = function() {
+        var btn1 = document.getElementById("btn1");
+        btn1.onclick = function(){
+            var username = document.getElementById("username").value;
+            alert(username);
+        }
+    } 
+</script>
+
+<script>
+    $(function() {
+        $('#btn2').click(function(){
+            alert($('#username').val());
+        })
+    });
+</script>
+</body>
+</html>
