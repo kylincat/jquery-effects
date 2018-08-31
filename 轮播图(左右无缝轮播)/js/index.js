@@ -51,7 +51,7 @@ $(function() {//页面加载完后才执行js代码
 
     var timer = setInterval(function() {
         $(".right").click();
-    },2000);
+    },3000);
 
     $("#ul").mouseenter(function() {
         clearInterval(timer);
@@ -60,7 +60,7 @@ $(function() {//页面加载完后才执行js代码
     $("#ul").mouseleave(function() {
         timer = setInterval(function() {
             $(".right").click();
-        },2000);
+        },3000);
     });
 
        
